@@ -5,11 +5,13 @@
     font-weight: weight;
     font-style: normal;
     color: #F3F3F3;
+  }
+body{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     background-color: #212121;
-  }
+}
 header{
     background-color: #131313;
     display: flex;
