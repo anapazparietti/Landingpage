@@ -10,12 +10,25 @@
     padding: 0;
     background-color: #212121;
   }
-  .header{
+header{
     background-color: #131313;
     display: flex;
+    justify-content:flex-start;
+    align-items: center;
     height: 90px;
   }
-  .logo img{
+.logo img{
     height: 64px;
     width: auto;
+  }
+.imagen img{
+  width: 589px;
+  height: 397px;
+}
+footer{
+  background-color: #131313;
+  display: flex;
+  justify-content:flex-start;
+  align-items: center;
+  height: 385px;
 }
