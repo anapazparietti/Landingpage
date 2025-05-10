@@ -2,10 +2,47 @@
 *{
     font-family: "Raleway", Arial, Helvetica, sans-serif;
     font-optical-sizing: auto;
-    font-weight: weight;
     font-style: normal;
     color: #F3F3F3;
   }
+/* FONT-WEIGHT REFERENCIA
+thin--100
+extraLight--200
+light--300
+regular--400
+medium--500
+semiBold--600
+bold--700
+extraBold--800
+black--900 */
+h1{
+  font-weight:900;
+  font-size: 64px;
+}
+h2{
+  font-weight: 600;
+  font-size: 48px;
+}
+h3{
+  font-weight: 500;
+  font-size: 32px;
+}
+h4{
+  font-weight: 600;
+  font-size: 20px;
+}
+h5{
+  font-weight: 500;
+  font-size: 17px;
+}
+h6{
+  font-weight: 300;
+  font-size: 16;
+}
+.seccion p{
+  font-weight: 300;
+  font-size: 24px;
+} 
 body{
     box-sizing: border-box;
     margin: 0;
@@ -19,6 +56,14 @@ header{
     align-items: center;
     height: 90px;
   }
+  hr{
+    border: 1px solid #757575;
+    /* width: 50%; */
+  }
+.bullets p{
+  font-weight: 400;
+  font-size: 16px;
+}
 .logo img{
     height: 64px;
     width: auto;
