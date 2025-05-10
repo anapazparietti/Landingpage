@@ -39,31 +39,43 @@ h6{
   font-weight: 300;
   font-size: 16;
 }
-.seccion p{
-  font-weight: 300;
+.seccion{
+  p{
+    font-weight: 300;
   font-size: 24px;
-} 
+  }
+  img{
+    width: 90vw;
+    height: auto;
+  }
+}
 body{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     background-color: #212121;
 }
+#portada{
+  img{
+    width: 90vw;
+  }
+}
 header{
     background-color: #131313;
-    display: flex;
-    justify-content:flex-start;
-    align-items: center;
     height: 90px;
-    width: 100%;
+    width: 100vw;
+    padding-left: 120px;
+    padding-top: 20px;
   }
-  hr{
+hr{
     border: 1px solid #757575;
-    /* width: 50%; */
   }
 .formulario{
   background-color: #131313;
   text-align: center;
+  img{
+    width: 90vw;
+  }
 }
 .btn{
   background-color: #E4A00C;
@@ -74,6 +86,12 @@ header{
     font-size: 24px;
   }
 }
+.contenedor-bullets{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
 .bullets p{
   font-weight: 400;
   font-size: 16px;
@@ -82,15 +100,8 @@ header{
     height: 64px;
     width: auto;
   }
-.imagen img{
-  width: 589px;
-  height: 397px;
-}
 footer{
   background-color: #131313;
-  display: flex;
-  justify-content:flex-start;
-  align-items: center;
   height: 385px;
   width: 100%;
 }
