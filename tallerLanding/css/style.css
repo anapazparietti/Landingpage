@@ -15,18 +15,19 @@ body{
 
 header{
     background-color: #131313;
-    height: 90px;
-    width: 100vw;
+    height: 70px;
+    width: 100%;
     padding-top: 20px;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
   }
 
 .logo img{
     height: 64px;
     width: auto;
+    margin-left: 20px;
 }
 
 /* FONT-WEIGHT REFERENCIA
@@ -65,23 +66,29 @@ h5{
 }
 
 h6{
+  margin-bottom: 0%;
   font-weight: 300;
   font-size: 16;
 }
 
-.seccion-1, .seccion-2, .seccion-3{
+.seccion-1, .seccion-2{
   p{
   font-weight: 300;
   font-size: 24px;
   }
 }
-
-.tituloysub{
+.seccion-1{
+  display: flex;
+}
+.seccion-1 .caja-texto{
   margin: 20px;
 }
-
+.seccion-1 .imagenes{
+  justify-content: right;
+}
 #portada{
   display: flex;
+  justify-content: center;
 }
 
 .columna-1{
@@ -90,8 +97,7 @@ h6{
 
 .columna-2 img{
   margin: 20px;
-  width: 500px;
-  height: 300px;
+  justify-content: right;
 }
 
 button{
@@ -100,16 +106,36 @@ button{
   color: #131313;
   font-weight: 700;
   font-size: 24px;
+  width: 408px;
+  height: 80px;
+  border-radius: 8px;
+  box-shadow: none;
+  border: none;
 }
-
+.banner{
+  background-color:#131313;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  text-wrap: nowrap;
+  ul{
+    list-style: none;
+    li{
+      padding: 0 10px 0 10px;
+      color: #E4A00C;
+      display: inline;
+    }
+  }
+}
 .imagenes{
   margin: 20px;
+  padding: 0%;
+  img{
+ width: 590px;
+ height:397px;
 }
+  }
 
-#imagen{
-  width: 80vh;
-  height: 60vh;
-}
 
 .contenedor-bullets{
   display: flex;
@@ -125,18 +151,22 @@ button{
 
 hr{
     border: 1px solid #757575;
+    width: 1200px;
   }
 
 .formulario{
   background-color: #131313;
   text-align: center;
+  width: 700px;
+  margin: 20px;
+  border-radius: 10px;
   img{
-    width: 90vw;
+    width: 590px;;
+    height: auto;
   }
 }
 
 footer{
   background-color: #131313;
-  height: 385px;
   width: 100%;
 }
