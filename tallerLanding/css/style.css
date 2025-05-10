@@ -76,6 +76,10 @@ h6{
   }
 }
 
+.tituloysub{
+  margin: 20px;
+}
+
 #portada{
   display: flex;
 }
