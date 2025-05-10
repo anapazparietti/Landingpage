@@ -55,11 +55,25 @@ header{
     justify-content:flex-start;
     align-items: center;
     height: 90px;
+    width: 100%;
   }
   hr{
     border: 1px solid #757575;
     /* width: 50%; */
   }
+.formulario{
+  background-color: #131313;
+  text-align: center;
+}
+.btn{
+  background-color: #E4A00C;
+  text-align: center;
+  a{
+    color: #131313;
+    font-weight: 700;
+    font-size: 24px;
+  }
+}
 .bullets p{
   font-weight: 400;
   font-size: 16px;
@@ -78,4 +92,5 @@ footer{
   justify-content:flex-start;
   align-items: center;
   height: 385px;
+  width: 100%;
 }
