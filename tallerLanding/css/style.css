@@ -19,7 +19,6 @@ main{
 }
 
 .separador {
-    width: 50%;
     margin: 100px;
     border: 1px solid #757575;
   }
@@ -52,42 +51,21 @@ bold--700
 extraBold--800
 black--900 */
 
-h1{
-  font-weight:900;
-  font-size: 64px;
-}
-
 h2{
   font-weight: 600;
-  font-size: 48px;
-}
-
-h3{
-  font-weight: 500;
-  font-size: 32px;
-  margin: 70px 0 50px 0;
-}
-
-h4{
-  font-weight: 600;
-  font-size: 20px;
-}
-
-h5{
-  font-weight: 500;
-  font-size: 17px;
-}
-
-h6{
-  margin-bottom: 0;
-  font-weight: 300;
-  font-size: 16;
+  font-size: 2.6em;
 }
 
 .portada{
-  /*display: flex;
-  flex-direction: row;
-  justify-content: space-around;*/
+  h1{
+  font-weight:900;
+  font-size: 4em;
+  }
+  h3{
+  font-weight: 500;
+  font-size: 1.5em;
+  margin: 50px 0 50px 0;
+  }
   display: grid;
   grid-template-columns: 1fr 1fr; /* Dos columnas iguales */
   gap: 5rem;
@@ -97,7 +75,8 @@ h6{
 .columna-portada{
  img{
   max-width: 100%;
-  height: 400px;
+  height: auto;
+  display: block;
  }
 }
 
@@ -106,7 +85,7 @@ button{
   text-align: center;
   color: #131313;
   font-weight: 700;
-  font-size: 24px;
+  font-size: 1.8em;
   width: 408px;
   height: 80px;
   border-radius: 8px;
@@ -124,23 +103,58 @@ button:hover{
 }
 
 .caja-texto{
-  margin: 20px;
+  margin: 0 20px;
 }
 
 .seccion-1, .seccion-2{
   p{
   font-weight: 300;
-  font-size: 24px;
+  font-size: 1.3em;
   margin: 20px 0 20px 0;
   }
 }
 
 .seccion-1{
   display: flex;
+  margin-top: 80px;
+  padding: 4em;
+  width: 100vw;
+  position: relative;
+  left: -5vw;
+  background-color: #E4A00C;
+  .caja-texto h2, p{
+    color: #131313;
+  }
+  img{
+  max-width: 50vw;
+  height: auto;
+  display: block;
+  }
 }
 
-.seccion-1 .imagenes{
-  justify-content: right;
+.seccion-2{
+  display: flex;
+  flex-direction: column;
+  padding: 4em;
+  width: 100vw;
+  position: relative;
+  left: -5vw;
+  background-color: #131313;
+  h2{
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .imagenes-2{
+  display: flex;
+  flex-direction: row;
+  img{
+  max-width: 40vw;
+  height: auto;
+  display: block;
+  align-items: center;
+  margin: auto; 
+  }
+  }
 }
 
 .banner{
@@ -152,7 +166,7 @@ button:hover{
   display: flex;
   align-items: center;
   text-wrap: nowrap;
-  margin: 20px 0;
+  margin: 50px 0;
   ul{
     list-style: none;
     li{
@@ -163,19 +177,9 @@ button:hover{
   }
 }
 
-.imagenes{
-  display: flex;
-  flex-direction: row;
-  img{
- width: 590px;
- height:397px;
- margin: auto;
- align-items: center;
-}
-  }
-
 .seccion-3 h2{
     text-align: center;
+    margin: 5rem;
 }
 
 .contenedor-bullets{
@@ -192,9 +196,10 @@ button:hover{
   gap: 1rem;
   margin-bottom: 3rem; 
  
-  h4, p{
-    margin: 0;
-  }
+  h4{
+    font-weight: 600;
+    font-size: 1.2em;
+  } 
 }
 
 .bullet-icon{
@@ -202,13 +207,23 @@ button:hover{
   img{
     width: 7em; /* Ajustalo a lo que necesites */
     height: auto;
+    object-fit: contain;
+    display: block;
   }
 }
 
-.bullet p{
+.bullet-text{ 
+  display: flex;
+  flex-direction: column;
+  h4{
+    font-size: 1.2em;
+     font-weight: 600;
+  }
+  p{
   font-weight: 400;
-  font-size: 16px;
-}
+  font-size: 1em;
+  }
+} 
 
  .formulario {
 	background: #131313;
@@ -222,7 +237,7 @@ button:hover{
     margin: 40px 0 40px 0;
   }
   img{
-    width: 590px;;
+    width: 590px;
     height: auto;
   }
   button{
@@ -307,8 +322,12 @@ footer{
   display: flex;
   flex-direction: row;
   justify-content: center;
-  .copyright{
+    .copyright{
     margin: 20px;
-    font-size: 1.2em;
+    h6{
+    font-size: 1em;
+    font-weight: 300;
+    }
   }
 }
+
