@@ -389,6 +389,7 @@ footer{
 
 .banner{
   max-width: 100%;
+  overflow: hidden;
 }
 
 .seccion-3 h2{
