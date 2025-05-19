@@ -192,14 +192,14 @@ button:hover{
   display: grid;
   grid-template-columns: 1fr 1fr; /* Dos columnas iguales */
   width: 100%;
-  justify-items: center;
+  justify-content: center;
   gap: 5rem;
 }
 
 .bullet{
   width: 100%; 
   display: flex;
-  align-items: center;
+  justify-content: center;
   gap: 1rem;
   margin-bottom: 3rem; 
   h4{
@@ -248,8 +248,6 @@ footer{
 
 .footer-container{
   display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
     .logo-footer{
       padding: 4rem;
         img{
@@ -359,6 +357,7 @@ footer{
   margin: 0;
   h2{
     text-align: center;
+    font-size: 2rem;
     font-weight: 600;
     margin: 1em 0;
   }
@@ -428,8 +427,8 @@ footer{
   }
   button{
   font-weight: 700;
-  font-size: 1.5em;
-  width: 18rem;
+  font-size: 1.3em;
+  width: 15rem;
   height: 4rem;
   margin-top: 3rem;
   }
@@ -439,12 +438,12 @@ footer{
   background-color: #131313;
   width: 100%;
   margin: 0;
+  overflow: hidden;
 }
 
 .footer-container{
   display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
+  align-items: center;
     .logo-footer{
       padding: 2rem;
         img{
@@ -457,11 +456,12 @@ footer{
   ul {
     list-style: none;
     padding: 0;
+    font-size: 0.8em;
   }
 }
 
 .footer-col-2{
-  padding: 1.2rem 1.2rem 0 1.2rem;
+  margin: 1.2rem;
   .footer-title{
     font-size: 1em;
   }
