@@ -162,26 +162,37 @@ button:hover{
   }
 }
 
-.banner{
-  background-color:#131313;
-  width: 100vw;
-  height: 3em;  
+.marquee {
+  overflow: hidden;
   position: relative;
-  left: -5vw; /*Este -5 compensa el margen del main, corre a la izquierda el banner y logra ocupar el ancho total"*/
+  border-top: 1px solid #E4A00C;
+  border-bottom: 1px solid #E4A00C;
+  color: #E4A00C;
+  height: 50px;
   display: flex;
-  justify-content: center;
   align-items: center;
-  text-wrap: nowrap;
-  margin: 2em 0;
-  ul{
-    list-style: none;
-    li{
-      padding: 0 0.6em;
-      color: #E4A00C;
-      display: inline;
-    }
+  font-size: 1.2rem;
+  font-weight: 800;
+}
+
+.track {
+  display: inline-block;
+  white-space: nowrap;
+  text-transform: uppercase;
+  position: absolute;
+  will-change: transform;
+  animation: scrollText 20s linear infinite;
+}
+
+@keyframes scrollText {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
   }
 }
+
 
 .seccion-3 h2{
     text-align: center;
@@ -386,10 +397,10 @@ footer{
     }
   }
 
-.banner{
+/*.marquee{
   max-width: 100%;
   overflow: hidden;
-}
+}*/
 
 .seccion-3 h2{
     margin: 2em 0;
