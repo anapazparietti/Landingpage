@@ -40,6 +40,7 @@ main{
 }
 
 .pop-up.active{
+  display: block;
   top: 50%;
   opacity: 1;
   transform: translate(-50%, -50%) scale(1);
@@ -82,7 +83,29 @@ main{
 }
 
 .pop-up .form-element{
-  margin: 1rem;
+  margin: 2rem;
+}
+
+.pop-up .form-element input[type="text"], .pop-up .form-element input[type="email"]{
+  display: block;
+  width: 100%;
+  padding: 0.8rem;
+  outline: none;
+  border-radius: 0.3rem;
+  border: 1px solid #131313;
+}
+
+.pop-up .form-element input[type="submit"]{
+  display: block;
+  width: 80%;
+  margin: auto;
+  padding: 1rem;
+  background-color: #E4A00C;
+  color: #131313;
+  border-radius: 0.6rem;
+  border: none;
+  font-size: 1rem;
+  font-weight: 700;
 }
 
 header{
@@ -173,7 +196,8 @@ button:hover{
 }
 
 .seccion-1{
-  display: flex;
+  display: grid;
+  grid-template-columns: 2fr 2fr; /* Columnas iguales */
   margin-top: 5rem;
   padding: 4em;
   width: 100vw;
