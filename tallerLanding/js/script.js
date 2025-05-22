@@ -1,3 +1,24 @@
+/*ABRIR Y CERRAR POPUP*/
+document.addEventListener("DOMContentLoaded", function () {
+  document.querySelectorAll(".show-form").forEach(function(btn) {
+  btn.addEventListener("click", function(){
+    document.querySelector(".pop-up").classList.add("active");
+  });
+});
+
+  document.querySelector(".pop-up .close-btn").addEventListener("click", function(){
+  document.querySelector(".pop-up").classList.remove("active");
+  });
+});
+
+/*RECIBIR DATOS DE FORMULARIO*/
+
+const input_submit = document.getElementById("input_submit");
+  input_submit.addEventListener("click", function() {
+    alert("Enviado");
+  });
+
+/*ANIMACIÓN MARQUEE*/
 function Marquee(selector, speed) {
     const marquee = document.querySelector(selector);
     const track = marquee.querySelector('.track');
@@ -21,5 +42,5 @@ function Marquee(selector, speed) {
   }
 
   window.addEventListener('load', function () {
-    Marquee('.marquee', 0.5); // Velocidad: más alto = más rápido
+    Marquee('.marquee', 0.5); 
   });

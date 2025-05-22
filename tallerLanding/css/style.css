@@ -23,6 +23,71 @@ main{
   margin: 5vw;
 }
 
+.pop-up{
+  position: fixed;
+  top: -150%;
+  left: 50%;
+  opacity: 0;
+  transform: translate(-50%, -50%);
+  background-color: #131313;
+  color: #F3F3F3;
+  width: 40%;
+  padding: 5%;
+  box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, 0.15);
+  border-radius: 1rem;
+  z-index: 1000;
+  transition: top 0ms ease-in-out 0ms, opacity 0ms ease-in-out 0ms, transform 20ms ease-in-out 0ms;
+}
+
+.pop-up.active{
+  top: 50%;
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1);
+  transition: top 0ms ease-in-out 0ms, opacity 0ms ease-in-out 0ms, transform 20ms ease-in-out 0ms;
+}
+
+.pop-up .close-btn{
+  position: fixed;
+  width: 1.5rem;
+  height: 1.5rem;
+  top: 2em;
+  right: 10%;
+  background-color: #212121;
+  color: #F3F3F3;
+  text-align: center;
+  border-radius: 8rem;
+  cursor: pointer;
+  z-index: 1000;
+  transition: top 0ms ease-in-out 200ms, opacity 200ms ease-in-out 0ms, transform 20ms ease-in-out 0ms;
+}
+
+.pop-up .logo-pop{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  img{
+  width: 20%;
+  }
+}
+
+.pop-up h4{
+  text-align: center;
+  font-size: 2rem;
+}
+
+.pop-up p{
+  text-align: center;
+  margin: 2rem;
+}
+
+.pop-up .form-element{
+  margin: 1rem;
+}
+
+.pop-up input_name{
+  
+}
+
 header{
     background-color: #131313;
     width: 100%;
@@ -39,17 +104,6 @@ header{
   align-items: center;
   }
 }
-
-/* FONT-WEIGHT REFERENCIA
-thin--100
-extraLight--200
-light--300
-regular--400
-medium--500
-semiBold--600
-bold--700
-extraBold--800
-black--900 */
 
 h2{
   font-weight: 600;
@@ -84,6 +138,7 @@ h2{
   width: 22rem;
   height: 5rem;
   margin: 1em 0;
+  cursor: pointer;
  }
 }
 
@@ -94,6 +149,7 @@ button{
   border-radius: 0.6rem;
   border: none;
   display: inline-block;
+  cursor: pointer;
 }
 
 button:hover{
@@ -168,9 +224,8 @@ button:hover{
   border-top: 1px solid #E4A00C;
   border-bottom: 1px solid #E4A00C;
   color: #E4A00C;
-  height: 50px;
+  height: 3rem;
   display: flex;
-  align-items: center;
   font-size: 1.2rem;
   font-weight: 800;
 }
@@ -179,9 +234,12 @@ button:hover{
   display: inline-block;
   white-space: nowrap;
   text-transform: uppercase;
-  position: absolute;
   will-change: transform;
-  animation: scrollText 20s linear infinite;
+  animation: scrollText 10s linear infinite;
+  text-align: center;
+  p{
+    font-weight: 400;
+  }
 }
 
 @keyframes scrollText {
@@ -239,6 +297,8 @@ button:hover{
 	margin: auto;
 	padding: 3em;
 	border-radius: 1rem;
+  position: relative;
+  overflow: visible;
   h2{
     margin-bottom: 2rem;
   }
@@ -327,6 +387,8 @@ footer{
     }
   }
 }
+
+
 
 /*MEDIA QUERIES - RESPONSIVE---------------------------------------------------------------------*/ 
 
