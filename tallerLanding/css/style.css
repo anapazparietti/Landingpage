@@ -243,40 +243,35 @@ button:hover{
 .marquee {
   overflow: hidden;
   position: relative;
-  height: 2rem;
+  height: 3rem;
   margin-bottom: 4rem;
-  display: flex;
-  justify-content: center;
-  text-wrap: wrap;
   border-top: 2px solid #E4A00C;
   border-bottom: 2px solid #E4A00C;
-  p{
-  font-size: 1.5rem;
-  font-weight: 800;
-  color: #E4A00C;
-  }
+  display: flex;
+  align-items: center;
 }
 
 .track {
-  display: inline-block;
+  display: flex;
   white-space: nowrap;
   text-transform: uppercase;
   will-change: transform;
-  animation: scrollText 10s linear infinite;
+  animation: scrollText 15s linear infinite;
 }
 
-.track{
-  p{
-  font-weight: 400;
-  }
+.track p{
+  font-weight: 500;
+  font-size: 1.5rem;
+  color: #E4A00C;
+  margin: 0;
 } 
 
 @keyframes scrollText {
   0% {
-    transform: translateX(100%);
+    transform: translateX(0%);
   }
   100% {
-    transform: translateX(-100%);
+    transform: translateX(-50%);
   }
 }
 
