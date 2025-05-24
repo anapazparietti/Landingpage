@@ -641,3 +641,54 @@ width: 80%;
   margin: 1rem;
 }
 }
+
+.feedback{
+  background-image: url(/tallerLanding/tallerLanding/images/wda.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 5vw;
+}
+
+.feedback-logo{
+  width: 20%;
+}
+
+.feedback h1{
+  margin: 5rem;
+  color: #F3F3F3;
+}
+
+.feedback h1{
+  font-size: 4rem;
+  font-weight: 800;
+}
+
+.feedback h3{
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.feedback p{
+  font-size: 1.6rem;
+  font-weight: 200;
+  margin: 2rem;
+}
+
+.feedback a {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 5rem;
+  font-size: 1.3rem;
+  font-weight: 400;
+  color: #E4A00C;
+
+}
+
+.feedback a:visited {
+  color: #FFCF40;
+  text-decoration: none;
+}

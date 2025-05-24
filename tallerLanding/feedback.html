@@ -4,17 +4,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="index.html">
-    <title>Document</title>
+    <link rel="shortcut icon" href="images/logo/logoCinefilos.png">
+    <title>Cinéfilos - Calendario enviado</title>
 </head>
-<body>
-    <section id="feedback">
-        <h1>¡GRACIAS <span id="nombre-placeholder"></span> POR SUMARTE!</h1>
-        <h3>Calendario enviado exitosamente.<h3>
-        <p>En breve recibirás un correo a <span id="email-placeholder"></span>con la información</p>
-    </section>
-    <footer>
+<body class="feedback">
+        <img class="feedback-logo" src="images/logo/cinefilos-1.png" alt="">
+        <h1>¡GRACIAS <span id="nombre-placeholder"></span> POR SUMARTE!!!</h1>
+        <h3>Calendario enviado exitosamente.</h3>
+        <p>En breve recibirás un correo a <span id="email-placeholder"></span> con la información</p>
         <a href="index.html">Volver</a>
-    </footer>
-    <script src="/tallerLanding/tallerLanding/js/script.js"></script>
-</body>
+        <script src="/tallerLanding/tallerLanding/js/script.js"></script>
+        <script>
+        document.addEventListener("DOMContentLoaded", function () {
+        
+        var nombre = localStorage.getItem("nombre");
+        var email = localStorage.getItem("email");
+
+        document.getElementById("nombre-placeholder").textContent = nombre;
+        document.getElementById("email-placeholder").textContent = email;
+        });
+        </script>
+    </body>
 </html>

@@ -7,11 +7,11 @@ document.addEventListener("DOMContentLoaded", function () {
     document.querySelector(".pop-up").classList.add("active");
   });
 
-  var input_nombre = document.getElementById("nombre");
-  var input_email = document.getElementById("mail");
-  var input_submit = document.getElementById("enviar");
-
 });
+
+var input_nombre = document.getElementById("nombre");
+var input_email = document.getElementById("mail");
+var input_submit = document.getElementById("enviar");
 
 document.querySelector(".pop-up .close-btn").addEventListener("click", function(){
 document.querySelector(".pop-up").classList.remove("active");
@@ -24,8 +24,11 @@ document.querySelector(".pop-up").classList.remove("active");
   function enviarForm(event) {
     event.preventDefault();
 
-    var valor_nombre = input_nombre.value;
-    var valor_mail = input_email.value;
+    var valor_nombre = document.getElementById("nombre").value;
+    var valor_mail = document.getElementById("mail").value;
+
+    localStorage.setItem("nombre", valor_nombre);
+    localStorage.setItem("email", valor_mail);
 
     console.log("Se envio el formulario");
     console.log("Nombre:", valor_nombre);
@@ -35,5 +38,7 @@ document.querySelector(".pop-up").classList.remove("active");
     window.location.href = "feedback.html";
     }, 1000); // Espera 1 segundo antes de redirigir
   }
-});
 
+  localStorage.removeItem("nombreUsuario");
+  localStorage.removeItem("emailUsuario");
+});
